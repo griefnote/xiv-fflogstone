@@ -1,7 +1,7 @@
 var apikey;
 chrome.storage.sync.get('fflogs_apikey', function(result){
       apikey = result.fflogs_apikey;
-      document.getElementById("fflogs-apikey-input").value = apikey;
+      if (typeof apikey !== 'undefined') document.getElementById("fflogs-apikey-input").value = apikey;
 });
 
 const parent = document.getElementById("commentWrapper");

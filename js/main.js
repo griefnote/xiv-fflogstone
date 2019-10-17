@@ -51,8 +51,9 @@ async function addFflogsLinkElement(){
   //console.log("FFLogs Link URL : " + url);
 
   var node = document.createElement("a");
-  node.setAttribute("class","badge badge-secondary ml-2 text-light");
+  node.setAttribute("id","fflogs-button");
   node.setAttribute("href", url);
+  node.setAttribute("target", "_blank");
   node.setAttribute("rel", "noopener");
   node.innerHTML = "FFLogs"
 
@@ -62,5 +63,5 @@ async function addFflogsLinkElement(){
 var storedKey;
 chrome.storage.sync.get('fflogs_apikey', function(result){
     storedKey = result.fflogs_apikey;
-    if (storedKey != "" ) addFflogsLinkElement();
+    if (typeof storedKey !== 'undefined') addFflogsLinkElement();
 });

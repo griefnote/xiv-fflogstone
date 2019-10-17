@@ -1,19 +1,19 @@
 {
   "name": "FFLogstone",
-  "version": "1.0",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "Add link to FFLogs in Lodestone Character page",
   "permissions": [ "storage" ],
   "browser_action" : {
     "default_icon" : "images/icon.png",
-    "default_title" : "Config xiv-fflogstone",
+    "default_title" : "Config FFLogstone",
     "default_popup" : "popup.html"
   },
   "content_scripts": [
     {
       "matches": ["https://*.finalfantasyxiv.com/lodestone/character/*"],
       "js": ["js/main.js"],
-      "css": ["css/bootstrap.min.css"],
+      "css": ["css/button.css"],
       "run_at": "document_end"
     }
   ]
