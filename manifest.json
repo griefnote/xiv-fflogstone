@@ -1,6 +1,6 @@
 {
   "name": "FFLogstone",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 2,
   "description": "Add link to FFLogs in Lodestone Character page",
   "permissions": [ "storage" ],

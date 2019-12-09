@@ -1,14 +1,13 @@
 #fflogs-button {
   display: inline-block;
-  max-width: 100px;
   text-align: center;
   border: 2px solid #929394;
-  font-size: 12px;
+  font-size: 11px;
   background-color: #545557;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 2px 7px;
+  padding: 1px 5px;
   margin-left: 10px;
   border-radius: 4px;
   transition: .3s;
