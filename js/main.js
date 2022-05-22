@@ -1,7 +1,7 @@
 function scrapeLodestone(){
   var character = {
     name: document.querySelector('.frame__chara__name').textContent,
-    realm: document.querySelector('.frame__chara__world').textContent.match(/^(\w*)\s+\((\w*)\)/),
+    realm: document.querySelector('.frame__chara__world').textContent.match(/^(\w*)\s+\[(\w*)\]/),
     server: "",
     datacenter: "",
     region: "",
